@@ -1,0 +1,79 @@
+.label Rand=$85d {
+  .label __SeedPrng8=$87d
+  .label Prng8=$85e
+  .label SeedPrng8=$86c
+  .label _Prng8=$86c
+  .label RandSeed=$85d
+}
+.label Joystick_1=$85c {
+  .label Buffer=$85c
+  .label Down=$2
+  .label Left=$4
+  .label Fire=$10
+  .label Right=$8
+  .label Up=$1
+}
+.label StartEntryLocation_COLOUR=$d9c5
+.label Start=$ad3 {
+}
+.label TILES=$8000
+.label Dice=$9a0 {
+  .label __RollDirection=$ad3
+  .label CurrentEntry=$3
+  .label EntryLoopIndex=$2
+  .label CurrentDirection=$3
+  .label DirectionLoopIndex=$2
+  .label __RollAlien=$9fb
+  .label RollDirection=$a69
+  .label RollAlien=$9a0
+  .label __RollEntry=$a69
+  .label AlienLoopIndex=$2
+  .label RollEntry=$9fb
+}
+.label StartEntryDirection_SCREEN=$c23d
+.label IRQ=$87d {
+  .label Init=$87d
+  .label __Init=$8aa
+  .label __MainIRQ=$8cb
+  .label MainIRQ=$8aa
+}
+.label Flags=$85b
+.label CHARS=$f000
+.label StartEntryLocation_SCREEN=$c1c5
+.label Flag=$85c {
+  .label VBlank=$1
+}
+.label StartAlienLocation_COLOUR=$d94d
+.label VIC=$80e {
+  .label COLOUR_RAM=$d800
+  .label MULTICOLOUR_1=$d022
+  .label SCREEN_RAM=$c000
+  .label BACKGROUND_COLOUR=$d021
+  .label MULTICOLOUR_2=$d023
+  .label BORDER_COLOUR=$d020
+}
+.label StartEntryDirection_COLOUR=$da3d
+.label StartAlienLocation_SCREEN=$c14d
+.label ZP=$2 {
+  .label TEMP_2=$3
+  .label CurrentAlien=$4
+  .label TEMP_1=$2
+  .label CurrentEntryAndDir=$5
+}
+.label CardLocations=$817
+.label TileScreenPositions=$80e
+.label ATTRS=$80a2
+.label Mult9=$849
+.label Cards=$8cb {
+  .label ShuffledCards=$8e4
+  .label Colr=$98f
+  .label Scr=$986
+  .label AllCards=$8cb
+  .label Tiles=$980
+  .label Attrs=$989
+  .label __ShuffleCards=$930
+  .label Index=$2
+  .label ShuffleCards=$8fd
+  .label __DisplayCards=$9a0
+  .label DisplayCards=$930
+}

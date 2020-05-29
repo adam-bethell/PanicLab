@@ -1,0 +1,139 @@
+<C64debugger version="1.0">
+   <Sources values="INDEX,FILE">
+      0,KickAss.jar:/include/autoinclude.asm
+      1,C:\Users\adamc\Documents\C64\Projects\PanicLab\src\dice.asm
+      2,C:\Users\adamc\Documents\C64\Projects\PanicLab\src\lib\rand.asm
+      3,C:\Users\adamc\Documents\C64\Projects\PanicLab\src\lib\lib.asm
+      4,C:\Users\adamc\Documents\C64\Projects\PanicLab\src\cards.asm
+      5,C:\Users\adamc\Documents\C64\Projects\PanicLab\src\zero.asm
+      6,C:\Users\adamc\Documents\C64\Projects\PanicLab\src\assests\assests.asm
+      7,C:\Users\adamc\Documents\C64\Projects\PanicLab\src\lib\vic.asm
+   </Sources>
+
+   <Segment name="Default" dest="" values="START,END,FILE_IDX,LINE1,COL1,LINE2,COL2">
+      <Block name="Tile Data">
+         $8000,$80a1,6,17,2,17,8
+         $80a2,$80b3,6,19,2,19,8
+         $80b4,$80b4,2,7,9,7,13
+         $80b5,$80b7,2,10,9,10,11
+         $80b8,$80ba,2,11,9,11,11
+         $80bb,$80bc,2,12,9,12,11
+         $80bd,$80be,2,13,9,13,11
+         $80bf,$80c1,2,14,9,14,11
+         $80c2,$80c2,2,16,9,16,11
+         $80c3,$80c5,2,21,9,21,11
+         $80c6,$80c8,2,22,9,22,11
+         $80c9,$80cb,2,23,9,23,11
+         $80cc,$80cd,2,24,9,24,11
+         $80ce,$80cf,2,25,9,25,11
+         $80d0,$80d2,2,26,9,26,11
+         $80d3,$80d3,2,27,9,27,11
+         $80d4,$80d6,3,7,5,7,9
+         $80d7,$80d9,3,8,5,8,9
+         $80da,$80dc,3,9,5,9,9
+         $80dd,$80de,3,11,5,11,9
+         $80df,$80e0,3,12,5,12,9
+         $80e1,$80e2,3,13,5,13,9
+         $80e3,$80e4,3,14,5,14,9
+         $80e5,$80e6,3,15,5,15,9
+         $80e7,$80e8,3,16,5,16,9
+         $80e9,$80ea,3,17,5,17,9
+         $80eb,$80ec,3,18,5,18,9
+         $80ed,$80ee,3,19,5,19,9
+         $80ef,$80f0,3,20,5,20,9
+         $80f1,$80f2,3,21,5,21,9
+         $80f3,$80f4,3,22,5,22,9
+         $80f5,$80f6,3,23,5,23,9
+         $80f7,$80f8,3,24,5,24,9
+         $80f9,$80fa,3,25,5,25,9
+         $80fb,$80fc,3,26,5,26,9
+         $80fd,$80fe,3,27,5,27,9
+         $80ff,$8100,3,28,5,28,9
+         $8101,$8102,3,29,5,29,9
+         $8103,$8104,3,30,5,30,9
+         $8105,$8106,3,31,5,31,9
+         $8107,$8108,3,32,5,32,9
+         $8109,$810a,3,33,5,33,9
+         $810b,$810c,3,34,5,34,9
+         $810d,$810e,3,35,5,35,9
+         $810f,$811d,3,44,5,44,9
+         $811e,$811e,3,47,5,47,9
+         $811f,$811f,3,59,9,59,13
+      </Block>
+      <Block name="Charset">
+         $f000,$f50f,6,12,5,12,11
+      </Block>
+   </Segment>
+
+   <Labels values="SEGMENT,ADDRESS,NAME,START,END,FILE_IDX,LINE1,COL1,LINE2,COL2">
+      Default,$f000,CHARS,6,11,1,11,6
+      Default,$8000,TILES,6,16,1,16,6
+      Default,$80a2,ATTRS,6,18,1,18,6
+      Default,$80b4,VIC,7,3,1,3,4
+      Default,$c000,SCREEN_RAM,7,4,12,4,21
+      Default,$d800,COLOUR_RAM,7,5,12,5,21
+      Default,$d022,MULTICOLOUR_1,7,6,12,6,24
+      Default,$d023,MULTICOLOUR_2,7,7,12,7,24
+      Default,$d020,BORDER_COLOUR,7,8,12,8,24
+      Default,$d021,BACKGROUND_COLOUR,7,9,12,9,28
+      Default,$80b4,Rand,2,3,1,3,5
+      Default,$80b4,RandSeed,2,5,5,5,13
+      Default,$80b5,Prng8,2,9,5,9,10
+      Default,$80c3,_Prng8,2,17,5,17,11
+      Default,$80c3,SeedPrng8,2,19,5,19,14
+      Default,$80d4,__SeedPrng8,2,28,5,28,16
+      Default,$80d4,TileScreenPositions,3,6,1,6,20
+      Default,$80dd,CardLocations,3,10,1,10,14
+      Default,$c175,StartAlienLocation_SCREEN,3,37,12,37,36
+      Default,$d975,StartAlienLocation_COLOUR,3,38,12,38,36
+      Default,$c1ed,StartEntryLocation_SCREEN,3,39,12,39,36
+      Default,$d9ed,StartEntryLocation_COLOUR,3,40,12,40,36
+      Default,$810f,Mult9,3,43,1,43,6
+      Default,$811e,Flags,3,46,1,46,6
+      Default,$811f,Flag,3,48,1,48,5
+      Default,$0001,VBlank,3,49,12,49,17
+      Default,$811f,Joystick_1,3,52,1,52,11
+      Default,$0010,Fire,3,53,12,53,15
+      Default,$0008,Right,3,54,12,54,16
+      Default,$0004,Left,3,55,12,55,15
+      Default,$0002,Down,3,56,12,56,15
+      Default,$0001,Up,3,57,12,57,13
+      Default,$811f,Buffer,3,58,5,58,11
+      Default,$0002,ZP,5,4,1,4,3
+      Default,$0002,TEMP_1,5,5,5,5,11
+      Default,$0003,TEMP_2,5,7,5,7,11
+      Default,$0004,CurrentAlien,5,11,5,11,17
+      Default,$0005,CurrentEntryAndDir,5,13,5,13,23
+      Default,$0006,Cards,4,9,1,9,6
+      Default,$0002,Index,4,10,12,10,16
+      Default,$0006,AllCards,4,11,5,11,13
+      Default,$001f,ShuffledCards,4,13,5,13,18
+      Default,$0038,ShuffleCards,4,16,5,16,17
+      Default,$0068,__ShuffleCards,4,46,5,46,19
+      Default,$0068,DisplayCards,4,48,5,48,17
+      Default,$00b7,Tiles,4,97,5,97,10
+      Default,$00bd,Scr,4,100,5,100,8
+      Default,$00c0,Attrs,4,102,5,102,10
+      Default,$00c6,Colr,4,105,5,105,9
+      Default,$00d7,__DisplayCards,4,116,5,116,19
+      Default,$00d7,Dice,1,11,1,11,5
+      Default,$00d7,RollAlien,1,12,5,12,14
+      Default,$0002,AlienLoopIndex,1,14,20,14,33
+      Default,$0132,__RollAlien,1,74,5,74,16
+      Default,$0132,RollEntry,1,76,5,76,14
+      Default,$0002,EntryLoopIndex,1,78,20,78,33
+      Default,$0003,CurrentEntry,1,79,20,79,31
+      Default,$019e,__RollEntry,1,153,5,153,16
+      Default,$019e,RollDirection,1,155,5,155,18
+      Default,$0002,DirectionLoopIndex,1,157,20,157,37
+      Default,$0003,CurrentDirection,1,158,20,158,35
+      Default,$01f9,__RollDirection,1,221,5,221,20
+   </Labels>
+
+   <Breakpoints values="SEGMENT,ADDRESS,ARGUMENT">
+   </Breakpoints>
+
+   <Watchpoints values="SEGMENT,ADDRESS1,ADDRESS2,ARGUMENT">
+   </Watchpoints>
+
+</C64debugger>
